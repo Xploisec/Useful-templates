@@ -1,0 +1,20 @@
+id: squid-detect
+
+info:
+  name: Squid Proxy Page
+  author: notnotnotveg
+<<<<<<< HEAD
+  severity: info
+=======
+  severity: informative
+>>>>>>> a63dfa1 (first commit)
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/"
+    matchers:
+      - type: word
+        words:
+          - "Squid Software"
+        part: body

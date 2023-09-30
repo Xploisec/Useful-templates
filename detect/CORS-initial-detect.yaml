@@ -1,0 +1,22 @@
+id: CORS-initial-detect
+
+info:
+        name: Detect CORS
+        author: jtcsec
+        severity: info
+<<<<<<< HEAD
+=======
+        tag: cors
+>>>>>>> a63dfa1 (first commit)
+
+requests:
+        - method: GET
+          path:
+                  - "{{BaseURL}}"
+          headers:
+                  Origin: "{{BaseURL}}"
+          matchers:
+                  - type: word
+                    words:
+                            - "Access-Control-Allow"
+                    part: header
